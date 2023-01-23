@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\ITMO\RevitAPITraining\M3Task33.dll"</Assembly>
+		<AddInId>DDE25DB9-3340-43EA-A55A-0BF74A3974B2</AddInId>
+		<FullClassName>M3Task33.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Запись параметра</Text>
+	</AddIn>
+</RevitAddIns>
+
