@@ -39,9 +39,9 @@ namespace M3Task33
                 ts.Start();
                 foreach (var selectedElement in selectedElementRefList)
                 {
-                    var Element = doc.GetElement(selectedElement);
-                    Parameter lengthParameter = Element.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH);
-                    Parameter stLengthParameter = Element.LookupParameter("Длина с запасом");
+                    var element = doc.GetElement(selectedElement);
+                    Parameter lengthParameter = element.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH);
+                    Parameter stLengthParameter = element.LookupParameter("Длина с запасом");
                     stLengthParameter.Set(lengthParameter.AsDouble() * 1.1);
                 }
                 ts.Commit();
